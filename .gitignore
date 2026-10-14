@@ -1,0 +1,48 @@
+# Python and local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local settings and credentials
+.env
+.env.*
+!.env.example
+secrets.h
+*.pem
+*.key
+.vscode/
+.idea/
+
+# Logs, weights and generated files
+data/
+src/models/
+*.pt
+*.onnx
+*.engine
+*.log
+*.exe
+*.o
+build/
+dist/
+
+# Personal documents and mechanical files
+3DParts/
+docs/history/
+docs/learning/
+docs/print/
+*Navigation-Guide*
+RESEARCH*
+RELEASE_MANIFEST.json
+*.pdf
+*.zip
+*.[sS][tT][lL]
+*.[sS][lL][dD][pP][rR][tT]
+*.[sS][lL][dD][aA][sS][mM]
+*.[sS][lL][dD][dD][rR][wW]
+*.3mf
+*.step
+*.stp
+Thumbs.db
+.DS_Store

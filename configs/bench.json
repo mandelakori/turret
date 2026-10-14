@@ -1,0 +1,20 @@
+{
+  "pan": {"minimum_us": 420, "maximum_us": 2850, "reference_us": 1270},
+  "tilt": {"minimum_us": 400, "maximum_us": 1510, "reference_us": 1370},
+  "firmware": {"step_us": 50, "interval_ms": 20, "managed_timeout_ms": 500},
+  "control": {
+    "gain_us_per_second_per_pixel": 1.0,
+    "max_rate_us_per_second": 250.0,
+    "max_dt_s": 0.1,
+    "deadzone_px": 15.0,
+    "pan_sign_mirrored": 1,
+    "tilt_sign": 0,
+    "max_observation_age_s": 0.25
+  },
+  "vision": {
+    "mirror": true,
+    "confidence": 0.5,
+    "model": "src/models/yolo26n-seg.pt",
+    "classes": ["person", "bird", "cat", "dog", "horse", "elephant", "bear", "sheep", "cow", "zebra", "giraffe"]
+  }
+}
